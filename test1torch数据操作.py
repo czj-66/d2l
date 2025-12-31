@@ -1,0 +1,18 @@
+import torch
+x = torch.arange(12)
+# print(x)
+# # x = x.shape
+# # print(x)
+# # x = x.numel()
+# # print(x)
+X = x.reshape(3,4)
+# print(X)
+# x = torch.zeros((2, 3, 4))
+# print(x)
+# x = torch.ones((2, 3, 4))
+# print(x)
+# x = torch.randn(3, 4)
+# print(x)
+A = X.numpy()
+B = torch.tensor(A)
+print(type(A), type(B))
